@@ -16,6 +16,7 @@ func versionHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	log.Printf("Listening on port 8000...")
+	log.Printf("kim is adding the new comment.")
 	http.HandleFunc("/version", versionHandler)
 	http.ListenAndServe(":8000", nil)
 }
