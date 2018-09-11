@@ -6,12 +6,12 @@ import (
 	"net/http"
 )
 
-const version string = "2.0.1"
+const version string = "CLM-2.0.1"
 
 // VersionHandler handles incoming requests to /version
 // and just returns a simple version number
 func versionHandler(w http.ResponseWriter, r *http.Request) {
-	io.WriteString(w, "CLM-" + version)
+	io.WriteString(w, version)
 }
 
 func main() {
