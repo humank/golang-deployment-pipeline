@@ -11,7 +11,7 @@ const version string = "2.0.1"
 // VersionHandler handles incoming requests to /version
 // and just returns a simple version number
 func versionHandler(w http.ResponseWriter, r *http.Request) {
-	io.WriteString(w, version)
+	io.WriteString(w, "CLM-" + version)
 }
 
 func main() {
